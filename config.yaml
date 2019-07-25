@@ -1,0 +1,11 @@
+baseurl: https://autoscale.drone.io
+title: Drone Autoscaler
+theme: drone-hugo-theme
+
+copyright: Drone.IO Inc.
+
+googleAnalytics: "UA-34247933-4"
+
+params:
+  algolia_key: 745aeaa8be75dc0c4de55030703ed3f4
+  algolia_index: drone_io
