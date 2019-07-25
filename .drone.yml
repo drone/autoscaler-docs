@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: theme
-  image: alpine:git
+  image: alpine/git
   commands:
   - git clone https://github.com/drone/drone-hugo-theme.git themes/drone-hugo-theme
 
