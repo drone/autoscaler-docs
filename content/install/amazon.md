@@ -42,7 +42,7 @@ docker pull drone/autoscaler
 
 The autoscaler container can be started with the below command. The container is configured through environment variables. For a full list of configuration parameters, please see the [configuration reference](/reference).
 
-{{< highlight terminal "linenos=table" >}}
+{{< highlight text "linenos=table" >}}
 docker run -d \
   -e DRONE_POOL_MIN={DRONE_POOL_MIN} \
   -e DRONE_POOL_MAX={DRONE_POOL_MAX} \
