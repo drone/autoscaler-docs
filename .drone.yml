@@ -2,10 +2,10 @@ kind: pipeline
 name: default
 
 steps:
- - name: theme
-   image: alpine:git
-   commands:
-   - git clone https://github.com/drone/drone-hugo-theme.git themes/drone-hugo-theme
+- name: theme
+  image: alpine:git
+  commands:
+  - git clone https://github.com/drone/drone-hugo-theme.git themes/drone-hugo-theme
 
 - name: build
   image: plugins/hugo
