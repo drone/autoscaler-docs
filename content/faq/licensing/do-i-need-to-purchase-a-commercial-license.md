@@ -1,6 +1,6 @@
 ---
 date: 2000-01-01T00:00:00+00:00
-title: Do I need to purcahase a commercial license?
+title: Do I need to purchase a commercial license?
 author: bradrydzewski
 weight: 2
 ---
