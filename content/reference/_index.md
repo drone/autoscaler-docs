@@ -4,6 +4,7 @@ title: Configuration Reference
 author: bradrydzewski
 weight: 3
 hide_children: true
+layout: list_li
 ---
 
 The following is the list of configuration parameters:
