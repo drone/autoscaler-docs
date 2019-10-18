@@ -5,5 +5,5 @@ author: bradrydzewski
 weight: 2
 ---
 
-You will need to purchase a commercial license if you do not qualify for the additional usage grant. Please contact our [sales team](mailto:sales@drone.io) to inquire about purchasing a commercial license.
+You need to purchase a commercial license if your company has over 1,000,000 USD total revenue in the prior tax year or over 100 employees. Please contact our [sales team](mailto:sales@drone.io) to inquire about purchasing a commercial license.
 

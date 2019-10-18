@@ -5,5 +5,4 @@ author: bradrydzewski
 weight: 4
 ---
 
-Please contact our [sales team](mailto:sales@drone.io) to inquire
-about purchasing a commercial license.
+Please contact our [sales team](mailto:sales@drone.io) to inquire about purchasing a commercial license.
