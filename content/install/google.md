@@ -16,7 +16,7 @@ This document is missing instructions to provide the autoscaler with Google Clou
 
 ## Create a Drone Token
 
-You need to create a user Drone token with administrative privilege that you can provide to the autoscaler. The autoscaler will use this token to remotely access the Drone build queue. If you do not know how to create a token please see our tutorial.
+You need to create a user Drone token with administrative privilege that you can provide to the autoscaler. The autoscaler will use this token to remotely access the Drone build queue. If you do not know how to create a token please see [our tutorial](https://docs.drone.io/manage/user/machine/).
 
 # Download
 

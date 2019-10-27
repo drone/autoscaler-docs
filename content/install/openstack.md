@@ -8,6 +8,10 @@ The goal of this document is to give you enough technical specifics to configure
 
 # Prerequisites
 
+## Create a Drone Token
+
+You need to create a Drone user token with administrative privilege that you can provide to the autoscaler. The autoscaler will use this token to remotely access the Drone build queue. If you do not know how to create a token please see [our tutorial](https://docs.drone.io/manage/user/machine/).
+
 {{< alert warn >}}
 This document is missing the pre-requisites for installing the autoscaler. Please consider sending a pull request to improve this documentation.
 {{</ alert >}}
