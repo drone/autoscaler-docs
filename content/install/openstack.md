@@ -30,6 +30,7 @@ The autoscaler container can be started with the below command. The container is
 
 {{< highlight terminal "linenos=table" >}}
 docker run -d \
+  -v /var/lib/autoscaler:/data \
   -e DRONE_POOL_MIN={DRONE_POOL_MIN} \
   -e DRONE_POOL_MAX={DRONE_POOL_MAX} \
   -e DRONE_SERVER_PROTO={DRONE_SERVER_PROTO} \
