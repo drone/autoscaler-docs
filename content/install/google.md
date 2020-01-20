@@ -18,6 +18,17 @@ This document is missing instructions to provide the autoscaler with Google Clou
 
 You need to create a user Drone token with administrative privilege that you can provide to the autoscaler. The autoscaler will use this token to remotely access the Drone build queue. If you do not know how to create a token please see our tutorial.
 
+## Create Google Credentials file
+
+If you running you autoscaler in a GCP instance then create `application_default_credentials.json` by executing next command in the GCP instance:
+```
+gcloud auth application-default login
+```
+
+And credentials will be saved in `/home/$(whoami)/.config/gcloud/application_default_credentials.json`.
+
+Otherwise, [create service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts), [generate credentials file](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) and save it somewhere in the machine where plan to run autoscaler.
+
 # Download
 
 The autoscaler is distributed as a lightweight Docker image. The image is self-contained and does not have any external requirements.
@@ -33,6 +44,7 @@ The autoscaler container can be started with the below command. The container is
 ```
 $ docker run -d \
   -v /var/lib/autoscaler:/data \
+  -v /path/to/application_credentials.json:/root/.config/gcloud/application_default_credentials.json \
   -e DRONE_POOL_MIN={DRONE_POOL_MIN} \
   -e DRONE_POOL_MAX={DRONE_POOL_MAX} \
   -e DRONE_SERVER_PROTO={DRONE_SERVER_PROTO} \
