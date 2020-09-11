@@ -41,13 +41,13 @@ The autoscaler container can be started with the below command. The container is
 {{< highlight text "linenos=table" >}}
 docker run -d \
   -v /var/lib/autoscaler:/data \
-  -e DRONE_POOL_MIN={DRONE_POOL_MIN} \
-  -e DRONE_POOL_MAX={DRONE_POOL_MAX} \
-  -e DRONE_SERVER_PROTO={DRONE_SERVER_PROTO} \
-  -e DRONE_SERVER_HOST={DRONE_SERVER_HOST} \
-  -e DRONE_SERVER_TOKEN={DRONE_SERVER_TOKEN} \
-  -e DRONE_AGENT_TOKEN={DRONE_AGENT_TOKEN} \
-  -e DRONE_DIGITALOCEAN_TOKEN={DIGITAL_OCEAN_TOKEN} \
+  -e DRONE_POOL_MIN=${DRONE_POOL_MIN} \
+  -e DRONE_POOL_MAX=${DRONE_POOL_MAX} \
+  -e DRONE_SERVER_PROTO=${DRONE_SERVER_PROTO} \
+  -e DRONE_SERVER_HOST=${DRONE_SERVER_HOST} \
+  -e DRONE_SERVER_TOKEN=${DRONE_SERVER_TOKEN} \
+  -e DRONE_AGENT_TOKEN=${DRONE_AGENT_TOKEN} \
+  -e DRONE_DIGITALOCEAN_TOKEN=${DIGITAL_OCEAN_TOKEN} \
   -e DRONE_DIGITALOCEAN_SIZE=s-2vcpu-4gb \
   -p 8080:8080 \
   --restart=always \
