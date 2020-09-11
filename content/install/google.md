@@ -45,14 +45,14 @@ The autoscaler container can be started with the below command. The container is
 $ docker run -d \
   -v /var/lib/autoscaler:/data \
   -v /path/to/application_credentials.json:/root/.config/gcloud/application_default_credentials.json \
-  -e DRONE_POOL_MIN={DRONE_POOL_MIN} \
-  -e DRONE_POOL_MAX={DRONE_POOL_MAX} \
-  -e DRONE_SERVER_PROTO={DRONE_SERVER_PROTO} \
-  -e DRONE_SERVER_HOST={DRONE_SERVER_HOST} \
-  -e DRONE_SERVER_TOKEN={DRONE_SERVER_TOKEN} \
-  -e DRONE_AGENT_TOKEN={DRONE_AGENT_TOKEN} \
-  -e DRONE_GOOGLE_PROJECT={DRONE_GOOGLE_PROJECT} \
-  -e DRONE_GOOGLE_ZONE={DRONE_GOOGLE_ZONE} \
+  -e DRONE_POOL_MIN=${DRONE_POOL_MIN} \
+  -e DRONE_POOL_MAX=${DRONE_POOL_MAX} \
+  -e DRONE_SERVER_PROTO=${DRONE_SERVER_PROTO} \
+  -e DRONE_SERVER_HOST=${DRONE_SERVER_HOST} \
+  -e DRONE_SERVER_TOKEN=${DRONE_SERVER_TOKEN} \
+  -e DRONE_AGENT_TOKEN=${DRONE_AGENT_TOKEN} \
+  -e DRONE_GOOGLE_PROJECT=${DRONE_GOOGLE_PROJECT} \
+  -e DRONE_GOOGLE_ZONE=${DRONE_GOOGLE_ZONE} \
   -p 8080:8080 \
   --restart=always \
   --name=autoscaler \

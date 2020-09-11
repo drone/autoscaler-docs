@@ -5,8 +5,8 @@ author: bradrydzewski
 toc: false
 ---
 
-An optional string field, provides the Amazon EBS volume type to be attached to the instance.
+An optional string field, provides the Amazon EBS volume type to be attached to the instance. Default value is `gp2`.
 
 ```
-DRONE_AMAZON_VOLUME_TYPE=standard
+DRONE_AMAZON_VOLUME_TYPE=gp2
 ```
