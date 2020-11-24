@@ -20,7 +20,7 @@ You need to create an AWS Secret Access key that you can provide to the autoscal
 
 ## Create an SSH Keypair
 
-You need to create an SSH keypair named `drone` and register with AWS. The autoscaler will use the SSH private key for remote login and access to your instances. If you do not know how to create and upload a keypair please see our tutorial.
+You need to create an SSH keypair named `drone` and register with AWS. The autoscaler will add the SSH key to provisioned instances. You can then use the private key for remote SSH access to the instance, for manual debugging purposes. If you do not know how to create and upload a keypair please see our tutorial.
 
 ## Create a VPC
 
