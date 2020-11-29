@@ -122,7 +122,7 @@ DRONE_AGENT_TOKEN=IiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ikxvb2
 A string containing your Google Cloud Platform project ID.
 
 ```
-DRONE_GOOGLE_PROJECT=us-central1-a
+DRONE_GOOGLE_PROJECT=my-sample-123
 ```
 
 ### DRONE_GOOGLE_ZONE
