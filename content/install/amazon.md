@@ -51,7 +51,6 @@ docker run -d \
   -e DRONE_SERVER_HOST=${DRONE_SERVER_HOST} \
   -e DRONE_SERVER_TOKEN=${DRONE_SERVER_TOKEN} \
   -e DRONE_AGENT_TOKEN=${DRONE_AGENT_TOKEN} \
-  -e DRONE_AMAZON_IMAGE=${DRONE_AMAZON_IMAGE} \
   -e DRONE_AMAZON_INSTANCE=${DRONE_AMAZON_INSTANCE} \
   -e DRONE_AMAZON_REGION=${DRONE_AMAZON_REGION} \
   -e DRONE_AMAZON_SUBNET_ID=${DRONE_AMAZON_SUBNET_ID} \
@@ -139,28 +138,12 @@ A string containing the identifier of the subnet used to configure instance netw
 DRONE_AMAZON_SUBNET_ID=subnet-0b32177f
 ```
 
-### DRONE_AMAZON_IMAGE
-
-A string field, provides the image (AMI) you wish to use when creating instances.
-
-```
-DRONE_AMAZON_IMAGE=ami-66506c1c
-```
-
 ### DRONE_AMAZON_INSTANCE
 
 A string field, provides the instance type you wish to use when provisioning instances. The default value is `t2.medium`.
 
 ```
 DRONE_AMAZON_INSTANCE=t2.medium
-```
-
-### DRONE_AMAZON_PRIVATE_IP
-
-A boolean field, indicates instances are to be created without a public IP address. The system will store and use the private IP address.
-
-```
-DRONE_AMAZON_PRIVATE_IP=true
 ```
 
 ### DRONE_AMAZON_SECURITY_GROUP
