@@ -6,6 +6,8 @@ author: bradrydzewski
 
 The Drone Autoscaler is a standalone daemon that continuously polls your build queue and provisions or terminates server instances based on volume.
 
+**Note:** a separate database (or database schema) is required for each autoscaler. They cannot share the same underlying database tables.
+
 Choose your hosting provider to get started:
 
 {{< link "/install/amazon" >}}
