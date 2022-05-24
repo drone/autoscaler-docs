@@ -11,7 +11,7 @@ The autoscaler supports automated SSL configuration and updates using let’s en
 First, enable Lets Encrypt:
 
 ```
-DRONE_TLS_AUTOSCERT=true
+DRONE_TLS_AUTOCERT=true
 ```
 
 Next, ensure the desired hostname is configured:
