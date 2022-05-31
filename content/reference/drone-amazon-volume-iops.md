@@ -1,6 +1,6 @@
 ---
 date: 2000-01-01T00:00:00+00:00
-title: DRONE_AMAZON_VOLUME_TYPE
+title: DRONE_AMAZON_VOLUME_IOPS
 author: bradrydzewski
 toc: false
 ---
