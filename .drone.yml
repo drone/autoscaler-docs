@@ -26,4 +26,6 @@ steps:
     token:
       from_secret: netlify_token
   when:
-    event: [ push ]
+    event:
+      exclude:
+        - pull_request
